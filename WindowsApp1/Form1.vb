@@ -8,8 +8,6 @@ Imports Google.Apis.Gmail.v1
 Imports Google.Apis.Services
 Imports System.Threading
 Imports System.Net.Mail
-
-
 Public Class Form1
     ''1 Authen สร้าง scope
     Private credential = GoogleWebAuthorizationBroker.AuthorizeAsync(New ClientSecrets With {.ClientId = "yourclientid", .ClientSecret = "wyourClientSecret"}, {GmailService.Scope.GmailCompose}, "user", CancellationToken.None).Result
